@@ -31,7 +31,7 @@ import bouton from "@/components/bouton.vue";
         mais également en audiovisuel, en communication ainsi que des notions de développement web.
       </p>
     </div>
-    <div class="mt-24 mr-20 ml-20 grid grid-flow-row-dense grid-cols-4">
+    <div class="mt-24 mr-36 ml-36 grid grid-flow-row-dense grid-cols-4">
       <div class="text-center">
         <img src="../assets/illustrator.png" class="inline-flex w-16" />
         <p class="inline-tabl font-okine text-sm font-light text-white">Illustrator</p>
@@ -50,7 +50,7 @@ import bouton from "@/components/bouton.vue";
       </div>
     </div>
 
-    <div class="mt-16 mb-24 mr-20 ml-20 grid grid-flow-row-dense grid-cols-3">
+    <div class="mt-16 mb-16 mr-72 ml-72 grid grid-flow-row-dense grid-cols-3">
       <div class="text-center">
         <img src="../assets/after.png" class="inline-flex w-16" />
         <p class="inline-tabl font-okine text-sm font-light text-white">After</p>
@@ -62,6 +62,15 @@ import bouton from "@/components/bouton.vue";
       <div class="text-center">
         <img src="../assets/vscode.png" class="inline-flex h-16" />
         <p class="inline-tabl font-okine text-sm font-light text-white">VS Code</p>
+      </div>
+    </div>
+
+    <div class="grid grid-flow-row-dense grid-cols-2 bg-white">
+      
+      <div><br /><p class="mt-9 mb-16 ml-64 w-80 font-arsenica text-4xl font-semibold">Envie de collaborer sur une projet ?</p></div>
+      <div class="mt-20">
+        <a href="/contact"><p class="text-center -ml-44 font-medium text-2xl">Me contacter</p></a>
+        <div class="text-center"><a href="mailto:theopasquarelli68@gmail.com" class="font-okine text-lg text-grey">theopasquarelli68@gmail.com</a></div>
       </div>
     </div>
   </main>
