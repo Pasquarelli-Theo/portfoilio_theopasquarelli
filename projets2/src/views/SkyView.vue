@@ -39,6 +39,3 @@ import bouton from "@/components/bouton.vue";
   </main>
 </template>
 
-<script>
-export default {};
-</script>

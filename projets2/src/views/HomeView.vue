@@ -8,24 +8,24 @@
     <div class="relative h-screen w-screen  rounded-lg">
          <!-- Item 1 -->
         <div class=" duration-700 ease-in-out" data-carousel-item>
-            <img src="@/assets/AfficheSkyWalker.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
+            <img src="@/assets/AfficheSkyWalker.jpg" class="absolute z-0 block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>  
         <!-- Item 2 -->
         <div class=" duration-700 ease-in-out" data-carousel-item>
-            <img src="@/assets/13bpm.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
+            <img src="@/assets/13bpm.png" class="absolute z-0 block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>  
         <!-- Item 3 -->
         <div class=" duration-700 ease-in-out" data-carousel-item>
-            <img src="@/assets/AfficheSkyWalker.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
+            <img src="@/assets/AfficheSkyWalker.jpg" class="absolute z-0 block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>  
         <!-- Item 4 -->
         <div class=" duration-700 ease-in-out" data-carousel-item>
-            <img src="@/assets/13bpm.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
+            <img src="@/assets/13bpm.png" class="absolute z-0 block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>  
         <!-- Item 5 -->
         <div class=" duration-700 ease-in-out" data-carousel-item>
-            <img src="@/assets/AfficheSkyWalker.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
+            <img src="@/assets/AfficheSkyWalker.jpg" class="absolute z-  0 block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>  
     </div>
     <!-- Slider indicators -->
     <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
