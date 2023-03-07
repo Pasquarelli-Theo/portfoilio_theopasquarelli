@@ -7,13 +7,13 @@ import { RouterLink, RouterView } from "vue-router";
     <RouterLink to="/home"><img src="@/assets/logoNoir.svg" class="mt-5 ml-5 w-36" /></RouterLink>
 
     <div class="fixed top-0 left-0 z-50 hidden h-screen w-full" id="menu">
-      <div class="flex h-full w-full flex-col items-center justify-center bg-white">
+      <div class="flex h-full w-full flex-col items-center justify-center bg-light_grey2">
         <a href="#" class="mb-4 text-2xl font-bold text-gray-800">Menu</a>
         <nav>
-          <a href="#" class="block py-2.5 px-4 font-aesthetic text-5xl hover:bg-gray-100">Accueil</a>
-          <a href="#" class="block py-2.5 px-4 font-aesthetic text-5xl hover:bg-gray-100">Services</a>
-          <a href="#" class="block py-2.5 px-4 font-aesthetic text-5xl hover:bg-gray-100">Contact</a>
-          <a href="#" class="block py-2.5 px-4 font-aesthetic text-5xl hover:bg-gray-100">Contact</a>
+          <a href="#" class="block ml-36 py-2.5 px-4 font-aesthetic text-5xl hover:bg-gray-100">1.HOME</a>
+          <a href="#" class="block ml-64 py-2.5 px-4 font-aesthetic text-5xl hover:bg-gray-100">2.PROJETS</a>
+          <a href="#" class="block ml-48 py-2.5 px-4 font-aesthetic text-5xl hover:bg-gray-100">3.À PROPOS</a>
+          <a href="#" class="block ml-80 py-2.5 px-4 font-aesthetic text-5xl hover:bg-gray-100">4.CONTACT</a>
         </nav>
       </div>
     </div>
