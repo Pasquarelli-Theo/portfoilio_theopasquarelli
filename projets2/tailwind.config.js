@@ -1,0 +1,47 @@
+module.exports = {
+  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        black: "#000000",
+        white: "#ffffff",
+        light_grey1: "#f1f1f1",
+        light_grey2: "#d9d9d9",
+        grey2: "#898989",
+        grey: "#767676",
+        grey3: "#676767",
+        dark_grey1: "#232323",
+        whiteTRS: "#ffffff",
+        purple: "#5a0d97",
+      },
+      fontSize: {
+        xs: "0.75rem",
+        sm: "0.875rem",
+        base: "0.9375rem",
+        lg: "1.25rem",
+        xl: "1.375rem",
+        "2xl": "1.5625rem",
+        "3xl": "1.875rem",
+        "4xl": "2.1875rem",
+        "5xl": "2.5rem",
+        "6xl": "3.75rem",
+        "7xl": "4.375rem",
+        "8xl": "5.625rem",
+      },
+      fontFamily: {
+        aesthetic: "Aesthetic",
+        "arsenica": "Arsenica Trial",
+        "okine": "MADE Okine Sans PERSONAL USE",
+      },
+      borderRadius: {
+        none: "0",
+        xs: "0.3125rem",
+        sm: "0.625rem",
+        default: "1.25rem",
+        lg: "1.375rem",
+        xl: "1.7074580192565918rem",
+      },
+    },
+  },
+  plugins: [],
+};
