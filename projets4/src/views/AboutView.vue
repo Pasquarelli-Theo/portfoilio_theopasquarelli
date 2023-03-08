@@ -69,7 +69,7 @@ import bouton from "@/components/bouton.vue";
       
       <div><br /><p class="mt-9 mb-16 ml-64 w-80 font-arsenica text-4xl font-semibold">Envie de collaborer sur une projet ?</p></div>
       <div class="mt-20">
-        <a href="/contact"><p class="text-center -ml-44 font-medium text-2xl">Me contacter</p></a>
+        <RouterLink to="/contact"><p class="text-center -ml-44 font-medium text-2xl">Me contacter</p></RouterLink>
         <div class="text-center"><a href="mailto:theopasquarelli68@gmail.com" class="font-okine text-lg text-grey">theopasquarelli68@gmail.com</a></div>
       </div>
     </div>
