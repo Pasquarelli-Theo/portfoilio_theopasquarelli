@@ -37,7 +37,7 @@ import { RouterLink, RouterView } from "vue-router";
       </div>
     </div>
 
-    <div class="absolute right-0 -mt-32 mr-28 flex bg-black">
+    <div class="absolute right-0 -mt-32 mr-28 flex">
       <img src="@/assets/instagram.png" class="w-12" />
       <img src="@/assets/linkedin.png" class="w-12" />
     </div>
