@@ -51,8 +51,8 @@ import bouton from "@/components/bouton.vue";
   </RouterLink>
   
   
-  <!-- <div class="mb-96"><br></div><br>
+  <div class="mb-96"><br></div><br>
     <div class="mb-96"><br></div><br>
-    <br><br> -->
+    <br><br>
   </main>
 </template>

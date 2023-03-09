@@ -4,7 +4,53 @@ import { RouterLink, RouterView } from "vue-router";
 </script>
 
 <template>
-  <header class="bg-white">
+<header class="sticky top-0 z-40 h-16 w-full bg-white">
+      <div class="flex h-full w-full items-center justify-between">
+        <div class="w-40">
+          <RouterLink to="/">
+            <img
+              src="@/assets/logoNoir.svg"
+              alt="Logo"
+              class=""
+            />
+          </RouterLink>
+        </div>
+        
+        <div class="">
+          <MenuIcon
+            class="text-black w-10 cursor-pointer"
+            @click="MenuOpen = !MenuOpen"
+          />
+        </div>
+
+        <nav
+          class="absolute   h-screen w-full -translate-y-[200%] bg-red-100 text-lg"
+          :class="MenuOpen && 'translate-y-0'"
+        >
+          <XIcon
+            class="float-right  w-10"
+            @click="MenuOpen = !MenuOpen"
+          />
+          <ul
+            class=" flex flex-col gap-8 py-4 font-archivo-black uppercase text-black"
+          >
+            <RouterLink to="/" class="transition-colors duration-150 hover:text-red-100" @click="MenuOpen = !MenuOpen"
+              >1. HOME</RouterLink
+            >
+            <RouterLink to="/projets" @click="MenuOpen = !MenuOpen"
+              >2. PROJETS</RouterLink
+            >
+            <RouterLink to="/about" @click="MenuOpen = !MenuOpen"
+              >3. À PROPOS</RouterLink
+            >
+            <RouterLink to="/contact" @click="MenuOpen = !MenuOpen"
+              >4. CONTACT</RouterLink
+            >
+          </ul>
+        </nav>
+      </div>
+    </header>
+  <!-- <header class="bg-white">
     <RouterLink to="/"><img src="@/assets/logoNoir.svg" class="mt-5 ml-5 w-36" /></RouterLink>
 
     <div class="absolute z-40"><div
@@ -16,52 +62,31 @@ import { RouterLink, RouterView } from "vue-router";
         <button v-if="!menuVisible" v-on:click="menuVisible = !menuVisible" class="mx-4">
           <img src="@/assets/menu_fermer.svg" alt="Menu Fermer" />
         </button>
-      </div>
-      <div class="flex justify-center">
-        <div class="athena ml-8 mt-8 flex flex-col text-left text-2xl">
-          <router-link class="hover:border-main-beige my-6 text-white" to="/" :class="{ 'text-main-beige': $route.name === 'home' }"
-            >Accueil
+      </div> -->
+
+
+      <!-- <div class="flex justify-center">
+        <div class="ml-8 mt-8 font-aesthetic flex flex-col text-left text-2xl">
+          <router-link class="my-6 text-white" to="/" :class="{ 'text-main-beige': $route.name === 'home' }"
+            >1. HOME
           </router-link>
 
-          <router-link class="hover:text-main-beige my-6 text-white" to="/gal" :class="{ 'text-main-beige': $route.name === 'galerie' }"
-            >Galerie
+          <router-link class="my-6 text-white" to="/projets" :class="{ 'text-main-beige': $route.name === 'galerie' }"
+            >2. PROJETS
           </router-link>
 
-          <router-link class="hover:text-main-beige my-6 text-white" to="/cla" :class="{ 'text-main-beige': $route.name === 'classement' }"
-            >Classement
+          <router-link class="my-6 text-white" to="/about" :class="{ 'text-main-beige': $route.name === 'classement' }"
+            >3. À PROPOS
           </router-link>
 
-          <router-link class="hover:text-main-beige my-6 text-white" to="/who" :class="{ 'text-main-beige': $route.name === 'who' }"
-            >Qui sommes-nous
-          </router-link>
-
-          <router-link class="hover:text-main-beige my-6 text-white" to="/cont" :class="{ 'text-main-beige': $route.name === 'contact' }"
-            >Contact
-          </router-link>
-
-          <router-link class="hover:text-main-beige my-6 text-white" to="/account" :class="{ 'text-main-beige': $route.name === 'account' }"
-            >Connexion
-          </router-link>
-
-          <router-link
-            class="hover:text-main-beige my-6 text-white"
-            to="/monespace"
-            v-if="connecter"
-            :class="{ 'text-main-beige': $route.name === 'monespace' }"
-            >Mon Espace
-          </router-link>
-          <router-link
-            class="hover:text-main-beige my-6 text-white"
-            to="/admin"
-            v-if="isAdmin"
-            :class="{ 'text-main-beige': $route.name === 'admin' }"
-            >Administration
+          <router-link class="my-6 text-white" to="/contact" :class="{ 'text-main-beige': $route.name === 'who' }"
+            >4. CONTACT
           </router-link>
         </div>
-      </div>
+      </div> -->
+    <!-- </div>
     </div>
-    </div>
-  </header>
+  </header> -->
 
   <Suspense>
     <router-view />
@@ -85,4 +110,18 @@ import { RouterLink, RouterView } from "vue-router";
   </footer>
 </template>
 
-<script></script>
+<script>
+import { MenuIcon, XIcon } from "@heroicons/vue/outline";
+export default {
+  name: "App",
+  components: {
+    MenuIcon,
+    XIcon,
+  },
+  }
+</script>
+
+<style>
+/* Import Styles application */
+@import "./assets/style.css";
+</style>
