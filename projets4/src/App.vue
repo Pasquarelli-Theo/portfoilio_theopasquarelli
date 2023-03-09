@@ -6,28 +6,28 @@ import { ref } from "@vue/reactivity";
 <template>
   <header class="sticky top-0 z-40 mt-10 h-16 w-full bg-white">
     <div class="flex h-full w-full items-center justify-between">
-      <div class="w-40">
+      <div class="w-52">
         <RouterLink to="/">
-          <img src="@/assets/logoNoir.svg" alt="Logo" class="" />
+          <img src="@/assets/logoNoir.svg" alt="Logo" class="ml-10" />
         </RouterLink>
       </div>
 
       <!--Bouton pour afficher menu-->
       <button
-        class="w-fi relative p-1"
+        class=" relative p-1"
         aria-controls="menu"
         :aria-expanded="menuOuvert"
         @click="menuOuvert = !menuOuvert"
         :class="[menuOuvert ? 'hidden' : '']"
       >
-        <img src="@/assets/Menu.svg" class="" />
+        <img src="@/assets/Menu.svg" class="mr-10 mb-10" />
         <span class="sr-only">Menu</span>
       </button>
 
       <!--Bouton pour cacher menu-->
-      <div @click="menuOuvert = !menuOuvert" :class="[menuOuvert ? '' : 'hidden']" class="m-5">
+      <div @click="menuOuvert = !menuOuvert" :class="[menuOuvert ? '' : 'hidden']" class="mr-20 mb-16">
         <button class="fixed z-[99]" aria-controls="menu" :aria-expanded="menuOuvert">
-          <img src="@/assets/menu_fermer.svg" class="h-8 w-8" />
+          <img src="@/assets/menu_fermer.svg" class="h-6 w-auto" />
           <span class="sr-only">Menu</span>
         </button>
       </div>
@@ -35,7 +35,7 @@ import { ref } from "@vue/reactivity";
       <!--Menu hamburger déroulé-->
       <div
         class="fixed inset-0 z-[90] translate-x-full motion-safe:transition-transform motion-safe:duration-1000"
-        :class="[' bg-light_grey1  text-purple', menuOuvert ? 'translate-x-0' : '']"
+        :class="[' bg-light_grey1  text-black', menuOuvert ? 'translate-x-0' : '']"
       >
         <div class="m-5 flex items-center">
           <router-link to="/">
@@ -45,17 +45,17 @@ import { ref } from "@vue/reactivity";
         <div class="mt-20 flex items-center justify-center">
           <ul @click="menuOuvert = !menuOuvert">
             <div class="items-between flex flex-col">
-              <li class="mt-5 font-aesthetic text-base text-purple">
-                <router-link class="" to="/histoire"> HISTOIRE </router-link>
+              <li class="mt-5 font-aesthetic text-5xl text-purple">
+                <router-link class="" to="/"> 1. HOME </router-link>
               </li>
-              <li class="mt-5 font-aesthetic text-base text-purple">
-                <router-link class="" to="/crea"> PÔLE CRÉA </router-link>
+              <li class="mt-5 font-aesthetic text-5xl text-purple">
+                <router-link class="" to="/projets"> 2. PROJETS </router-link>
               </li>
-              <li class="mt-5 font-aesthetic text-base text-purple">
-                <router-link class="" to="/event"> EVENT </router-link>
+              <li class="mt-5 font-aesthetic text-5xl text-purple">
+                <router-link class="" to="/about"> 3. À PROPOS </router-link>
               </li>
-              <li class="mt-5 font-aesthetic text-base text-purple">
-                <router-link class="" to="/event"> EVENT </router-link>
+              <li class="mt-5 font-aesthetic text-5xl text-purple">
+                <router-link class="" to="/contact"> 4. CONTACT </router-link>
               </li>
             </div>
           </ul>
@@ -87,15 +87,6 @@ import { ref } from "@vue/reactivity";
 </template>
 
 <script>
-import { MenuIcon, XIcon } from "@heroicons/vue/outline";
-export default {
-  name: "App",
-  components: {
-    MenuIcon,
-    XIcon,
-  },
-};
-
 let menuOuvert = ref();
 menuOuvert.value = false;
 </script>

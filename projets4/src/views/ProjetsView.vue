@@ -1,5 +1,4 @@
 <script setup>
-import bouton from "@/components/bouton.vue";
 </script>
 
 <template>
