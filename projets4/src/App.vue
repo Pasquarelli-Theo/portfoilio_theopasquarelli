@@ -1,32 +1,72 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
+
 </script>
 
 <template>
   <header class="bg-white">
     <RouterLink to="/"><img src="@/assets/logoNoir.svg" class="mt-5 ml-5 w-36" /></RouterLink>
 
-    <div class="fixed top-0 left-0 z-50 hidden h-screen w-full" id="menu">
-      <div class="flex h-full w-full flex-col items-center justify-center bg-light_grey2">
-        <a href="#" class="mb-4 text-2xl font-bold text-gray-800">Menu</a>
-        <nav>
-          <a href="#" class="block ml-36 py-2.5 px-4 font-aesthetic text-5xl hover:bg-gray-100">1.HOME</a>
-          <a href="#" class="block ml-64 py-2.5 px-4 font-aesthetic text-5xl hover:bg-gray-100">2.PROJETS</a>
-          <a href="#" class="block ml-48 py-2.5 px-4 font-aesthetic text-5xl hover:bg-gray-100">3.À PROPOS</a>
-          <a href="#" class="block ml-80 py-2.5 px-4 font-aesthetic text-5xl hover:bg-gray-100">4.CONTACT</a>
-        </nav>
+    <div class="absolute z-40"><div
+      class="bg-main-blue fixed h-screen w-screen overflow-y-hidden"
+      v-on:click="menuVisible = !menuVisible"
+      :class="{ hidden: menuVisible }"
+    >
+      <div class="mt-4 flex justify-start">
+        <button v-if="!menuVisible" v-on:click="menuVisible = !menuVisible" class="mx-4">
+          <img src="@/assets/menu_fermer.svg" alt="Menu Fermer" />
+        </button>
+      </div>
+      <div class="flex justify-center">
+        <div class="athena ml-8 mt-8 flex flex-col text-left text-2xl">
+          <router-link class="hover:border-main-beige my-6 text-white" to="/" :class="{ 'text-main-beige': $route.name === 'home' }"
+            >Accueil
+          </router-link>
+
+          <router-link class="hover:text-main-beige my-6 text-white" to="/gal" :class="{ 'text-main-beige': $route.name === 'galerie' }"
+            >Galerie
+          </router-link>
+
+          <router-link class="hover:text-main-beige my-6 text-white" to="/cla" :class="{ 'text-main-beige': $route.name === 'classement' }"
+            >Classement
+          </router-link>
+
+          <router-link class="hover:text-main-beige my-6 text-white" to="/who" :class="{ 'text-main-beige': $route.name === 'who' }"
+            >Qui sommes-nous
+          </router-link>
+
+          <router-link class="hover:text-main-beige my-6 text-white" to="/cont" :class="{ 'text-main-beige': $route.name === 'contact' }"
+            >Contact
+          </router-link>
+
+          <router-link class="hover:text-main-beige my-6 text-white" to="/account" :class="{ 'text-main-beige': $route.name === 'account' }"
+            >Connexion
+          </router-link>
+
+          <router-link
+            class="hover:text-main-beige my-6 text-white"
+            to="/monespace"
+            v-if="connecter"
+            :class="{ 'text-main-beige': $route.name === 'monespace' }"
+            >Mon Espace
+          </router-link>
+          <router-link
+            class="hover:text-main-beige my-6 text-white"
+            to="/admin"
+            v-if="isAdmin"
+            :class="{ 'text-main-beige': $route.name === 'admin' }"
+            >Administration
+          </router-link>
+        </div>
       </div>
     </div>
-
-    <button class="fixed top-0 right-0 z-50 mt-8 mr-8" @click="open = !open">
-      <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-      </svg>
-    </button>
+    </div>
   </header>
+
   <Suspense>
     <router-view />
   </Suspense>
+
   <footer class="bg-black text-white">
     <br />
     <div class="ml-8 grid grid-flow-row-dense grid-cols-2">
