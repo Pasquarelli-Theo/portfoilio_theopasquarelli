@@ -3,7 +3,7 @@ import bouton from "@/components/bouton.vue";
 </script>
 
 <template>
-  <main class=" bg-dark_grey1 text-white">
+  <main class="bg-dark_grey1 text-white">
     <div>
       <div class=""><img src="../assets/AfficheSkyWalker.jpg" class="w-max" /></div>
       <div class="absolute right-0 z-30"><h2 class="mt-14 mr-36 font-aesthetic text-6xl">13 BPM</h2></div>
@@ -38,4 +38,3 @@ import bouton from "@/components/bouton.vue";
     </div>
   </main>
 </template>
-

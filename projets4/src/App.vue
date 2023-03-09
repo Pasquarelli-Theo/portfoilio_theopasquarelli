@@ -4,7 +4,7 @@ import { RouterLink, RouterView } from "vue-router";
 
 <template>
   <header class="bg-white">
-    <RouterLink to="/home"><img src="@/assets/logoNoir.svg" class="mt-5 ml-5 w-36" /></RouterLink>
+    <RouterLink to="/"><img src="@/assets/logoNoir.svg" class="mt-5 ml-5 w-36" /></RouterLink>
 
     <div class="fixed top-0 left-0 z-50 hidden h-screen w-full" id="menu">
       <div class="flex h-full w-full flex-col items-center justify-center bg-light_grey2">
