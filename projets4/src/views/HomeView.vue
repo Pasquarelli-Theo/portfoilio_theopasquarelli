@@ -1,12 +1,114 @@
 <script setup></script>
 
 <template>
-  <div class="overflow-x-scroll"><div class="flex">
-    <img src="../assets/AfficheSkyWalker.jpg" />
-    <img src="../assets/13bpm.png" />
-    <img src="../assets/osaka.png" />
-    <img src="../assets/corsaire.png" />
-    </div>
+  <div class="overflow-x-scroll">
+    <ul class="flex">
+      <li class="flex-none">
+        <img src="../assets/mer.jpg" class="h-screen w-screen" />
+        <div>
+          <RouterLink to="/skywalker"
+            ><div class="-ml-48 flex justify-center">
+              <div class="relative z-10 -mt-96 flex justify-center">
+                <h2 class="-mt-8 font-aesthetic text-8xl text-white">T</h2>
+                <h2 class="font-aesthetic text-6xl text-white">HÉO </h2>
+                <h2 class="-mt-8 font-aesthetic text-8xl ml-5 text-white">P</h2>
+                <h2 class="font-aesthetic text-6xl text-white">ASQUARELLI</h2>
+              </div>
+              <img src="../assets/fleche.png" class="-mt-72 -ml-80 h-12" /></div
+          ></RouterLink>
+          <div class="ml-16">
+            <p class="relative -mt-80 ml-80 w-36 h-10 rotate-12 rounded-xl border-2 border-white pt-1 text-center font-okine text-white">
+              Web designer
+            </p>
+          </div>
+        </div>
+      </li>
+
+
+      <li class="flex-none">
+        <img src="../assets/AfficheSkyWalker.jpg" class="blur-sm h-screen w-screen" />
+        <div>
+          <RouterLink to="/skywalker"
+            ><div class="-ml-24 flex justify-center">
+              <div class="relative z-10 -mt-96 flex justify-center">
+                <h2 class="-mt-8 font-aesthetic text-8xl text-white">S</h2>
+                <h2 class="font-aesthetic text-6xl text-white">KY</h2>
+                <h2 class="-mt-8 font-aesthetic text-8xl text-white">W</h2>
+                <h2 class="font-aesthetic text-6xl text-white">ALKER</h2>
+              </div>
+              <img src="../assets/fleche.png" class="-mt-72 -ml-80 h-12" /></div
+          ></RouterLink>
+          <div class="ml-16">
+            <p class="relative -mt-80 ml-96 w-36 rotate-12 rounded-xl border-2 border-white text-center font-okine text-white">
+              Sneakers personnalisées
+            </p>
+          </div>
+        </div>
+      </li>
+
+      <li class="h-screen w-screen flex-none">
+        <img src="../assets/13bpm.png" class="blur-sm h-screen w-screen" />
+        <div>
+          <RouterLink to="/skywalker"
+            ><div class="-ml-24 flex justify-center">
+              <div class="relative z-10 -mt-96 flex justify-center">
+                <h2 class="-mt-8 font-aesthetic text-8xl text-white">S</h2>
+                <h2 class="font-aesthetic text-6xl text-white">KY</h2>
+                <h2 class="-mt-8 font-aesthetic text-8xl text-white">W</h2>
+                <h2 class="font-aesthetic text-6xl text-white">ALKER</h2>
+              </div>
+              <img src="../assets/fleche.png" class="-mt-72 -ml-60 h-12" /></div
+          ></RouterLink>
+          <div class="ml-16">
+            <p class="relative -mt-80 ml-96 w-36 rotate-12 rounded-xl border-2 border-white text-center font-okine text-white">
+              Sneakers personnalisées
+            </p>
+          </div>
+        </div>
+      </li>
+
+      <li class="h-screen w-screen flex-none">
+        <img src="../assets/osaka.png" class="blur-sm h-screen w-screen" />
+        <div>
+          <RouterLink to="/skywalker"
+            ><div class="-ml-24 flex justify-center">
+              <div class="relative z-10 -mt-96 flex justify-center">
+                <h2 class="-mt-8 font-aesthetic text-8xl text-white">S</h2>
+                <h2 class="font-aesthetic text-6xl text-white">KY</h2>
+                <h2 class="-mt-8 font-aesthetic text-8xl text-white">W</h2>
+                <h2 class="font-aesthetic text-6xl text-white">ALKER</h2>
+              </div>
+              <img src="../assets/fleche.png" class="-mt-72 -ml-60 h-12" /></div
+          ></RouterLink>
+          <div class="ml-16">
+            <p class="relative -mt-80 ml-96 w-36 rotate-12 rounded-xl border-2 border-white text-center font-okine text-white">
+              Sneakers personnalisées
+            </p>
+          </div>
+        </div>
+      </li>
+
+      <li class="h-screen w-screen flex-none">
+        <img src="../assets/corsaire.png" class="blur-sm h-screen w-screen" />
+        <div>
+          <RouterLink to="/skywalker"
+            ><div class="-ml-24 flex justify-center">
+              <div class="relative z-10 -mt-96 flex justify-center">
+                <h2 class="-mt-8 font-aesthetic text-8xl text-white">S</h2>
+                <h2 class="font-aesthetic text-6xl text-white">KY</h2>
+                <h2 class="-mt-8 font-aesthetic text-8xl text-white">W</h2>
+                <h2 class="font-aesthetic text-6xl text-white">ALKER</h2>
+              </div>
+              <img src="../assets/fleche.png" class="-mt-72 -ml-60 h-12" /></div
+          ></RouterLink>
+          <div class="ml-16">
+            <p class="relative -mt-80 ml-96 w-36 rotate-12 rounded-xl border-2 border-white text-center font-okine text-white">
+              Sneakers personnalisées
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
   </div>
 
   <!-- <div id="default-carousel" class="relative" data-carousel="slide">

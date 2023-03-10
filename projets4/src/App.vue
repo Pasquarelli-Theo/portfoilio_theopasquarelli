@@ -42,19 +42,19 @@ import { ref } from "@vue/reactivity";
             <logo class="stroke-purtext-purple stroke-2" />
           </router-link>
         </div>
-        <div class="mt-20 flex items-center justify-center">
+        <div class="mt-20 ml-10 flex items-center justify-center">
           <ul @click="menuOuvert = !menuOuvert">
             <div class="items-between flex flex-col">
-              <li class="mt-5 font-aesthetic text-5xl text-purple">
+              <li class="mt-20 -ml-28 font-aesthetic text-6xl text-black">
                 <router-link class="" to="/"> 1. HOME </router-link>
               </li>
-              <li class="mt-5 font-aesthetic text-5xl text-purple">
+              <li class="-mt-5 font-aesthetic text-6xl text-black">
                 <router-link class="" to="/projets"> 2. PROJETS </router-link>
               </li>
-              <li class="mt-5 font-aesthetic text-5xl text-purple">
+              <li class="-mt-5 -ml-16 font-aesthetic text-6xl text-black">
                 <router-link class="" to="/about"> 3. À PROPOS </router-link>
               </li>
-              <li class="mt-5 font-aesthetic text-5xl text-purple">
+              <li class="-mt-5 ml-20 font-aesthetic text-6xl text-black">
                 <router-link class="" to="/contact"> 4. CONTACT </router-link>
               </li>
             </div>
