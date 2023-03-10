@@ -3,13 +3,20 @@ import bouton from "@/components/bouton.vue";
 </script>
 
 <template>
-  <main class=" bg-dark_grey1 text-white">
+  <main class="bg-dark_grey1 text-white">
     <div>
       <div class=""><img src="../assets/AfficheSkyWalker.jpg" class="w-max" /></div>
       <div class="absolute right-0 z-30"><h2 class="mt-14 mr-36 font-aesthetic text-6xl">SNEAKERS PERSONNALISABLE</h2></div>
       <div class="absolute right-14 z-10 mt-24 mr-5 w-2/6"><img src="../assets/HomeSkywalker.png" class="" /></div>
       <div class="z-0 mt-52"><img src="../assets/CroixProjets.png" class="" /></div>
-      <div class="absolute right-1/3 z-10 mr-24 -mt-96"><h3 class="-mt-20 font-aesthetic text-5xl">SKYWALKER</h3></div>
+      <div class="absolute right-1/3 z-10 mr-24 -mt-96">
+        <div class="flex">
+          <h3 class="-mt-16 font-aesthetic text-5xl">S</h3>
+          <h3 class="-mt-14 font-aesthetic text-3xl">ky</h3>
+          <h3 class="-mt-16 font-aesthetic text-5xl">W</h3>
+          <h3 class="-mt-14 font-aesthetic text-3xl">alker</h3>
+        </div>
+      </div>
       <div class="absolute right-1/3 z-10 mr-24 -mt-80 w-2/5">
         <p class="-mt-16 text-right">
           Le projet SkyWalker est un projet de marque de sneakers personnalisable créé en cours de design d’expérience lors de ma formation
@@ -38,4 +45,3 @@ import bouton from "@/components/bouton.vue";
     </div>
   </main>
 </template>
-

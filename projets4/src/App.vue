@@ -14,7 +14,7 @@ import { ref } from "@vue/reactivity";
 
       <!--Bouton pour afficher menu-->
       <button
-        class=" relative p-1"
+        class="relative p-1"
         aria-controls="menu"
         :aria-expanded="menuOuvert"
         @click="menuOuvert = !menuOuvert"
@@ -23,7 +23,7 @@ import { ref } from "@vue/reactivity";
         <img src="@/assets/Menu.svg" class="mr-10 mb-10" />
         <span class="sr-only">Menu</span>
       </button>
-
+ 
       <!--Bouton pour cacher menu-->
       <div @click="menuOuvert = !menuOuvert" :class="[menuOuvert ? '' : 'hidden']" class="mr-20 mb-16">
         <button class="fixed z-[99]" aria-controls="menu" :aria-expanded="menuOuvert">
@@ -91,5 +91,4 @@ let menuOuvert = ref();
 menuOuvert.value = false;
 </script>
 
-<style>
-</style>
+<style></style>
